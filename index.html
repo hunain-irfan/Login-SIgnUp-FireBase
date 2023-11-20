@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div style="background-color: rgb(247, 245, 245);">
+        <div class="register-div">
+            <form id="register-form">
+                <h3>REGISTER</h3>
+                <label class="full-name">Full Name
+                    <input type="text" placeholder="Full Name" id="fullName">
+                </label><br>
+                <label>Email
+                    <input  type="email" placeholder="Email" id="email">
+                </label><br>
+                <label>Password
+                    <input type="password" placeholder="Password" id="password">
+                </label><br>
+                <label>
+                    <input id="register-sumbit" type="submit" value="Register">
+
+                </label>
+                <p>Already have an account? <span id="signIn-switch">Sign In</span></p>
+            </form>
+            <div class="side-img">
+                <p>
+                    Hey <br>
+                    Welcome <br>
+                    In
+                </p>
+            </div>
+        </div>
+        <div style="display: none;" class="container-div login-div">
+            <form id="login-form">
+                <h3>LOGIN</h3>
+                <label class="email">
+                    Email
+                    <input type="email"  required placeholder="Email"
+                        id="user-email" />
+                </label>
+                <br />
+
+                <label>
+                    Password
+                    <input type="password" required placeholder="Password" id="user-password" />
+                </label>
+                <br />
+                <input id="login-submit" type="submit" value="Sign in" />
+                <p>Do'nt have an account? <span id="signUp-switch">Sign up</span></p>
+            </form>
+            <div class="side-img">
+                <p>
+                    Hey <br>
+                    Welcome <br>
+                    Back
+                </p>
+            </div>
+        </div>
+
+
+        <div id="todo-div">
+            <div class="container">
+                <button id="logout">Logout</button>
+                <div class="todo-app">
+                    <h2>To-Do List </h2>
+                        <!-- <img src="images/icon.png" alt="#"> -->
+                    <div class="row">
+                        <input type="text" name="todo-input" id="input-box" placeholder="Add your text..">
+                        <button onclick="Addtask()">Add</button>
+                    </div>
+                    <ul id="list-container">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <form>
+        <label><input type="text" placeholder="Blog-Title"></label>
+        <label><input type="text" placeholder="Blog-Description"></label>
+        <input type="radio" name="level" value="Beginner">Beginner
+        <input type="radio" name="level" value="Intermediate">Intermediate
+        <input type="radio" name="level" value="Expert">Expert
+    </form> -->
+    </div>
+    <script src="todo.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

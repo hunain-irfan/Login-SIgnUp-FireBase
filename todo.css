@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(#ffd55c 50% , #5a95ff 50%); */
+    /* background-image: url(side-image.jpg); */
+    background-size: cover;
+    padding: 10px;
+}
+
+.todo-app {
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+
+.todo-app h2 {
+    color: #002765;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* .todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+    text-align: center;
+} */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+#input-box {
+    border: none;
+    padding: 16px;
+    outline: none;
+    background: #edeef0;
+    width: 355px;
+    border-radius: 30px;
+}
+
+button {
+    color: #fff;
+    background: #6b2fa3;
+    border-radius: 30px;
+    padding: 14px 39px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 17px;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    font-size: 22px;
+    padding: 0 10px;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+ul li span img {
+    color: #555;
+    width: 13px;
+    height: 13px;
+}
+
+#logout {
+    transform: scale(0.7);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}

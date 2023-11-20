@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+#register-form label{
+    width: 100px;
+    display: inline-block;
+    margin: 10px 0;
+}
+#login-form label{
+    width: 100px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(247, 245, 245);
+}
+
+
+.login-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    max-height: 900px;
+    margin: 0 auto;
+    margin-top: 75px;
+    /* display: none; */
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.register-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    max-height: 900px;
+    margin: 0 auto;
+    margin-top: 75px;
+    transition: 0.4s;
+    /* display: none; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+ } 
+
+/* .container-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    max-height: 900px;
+    margin: 0 auto;
+    margin-top: 75px;
+    transition: 0.4s;
+    z-index: 5;
+    transform: translate(-50% , -50%); */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+} */ 
+
+
+#login-form , #register-form{
+    width: 450px;
+    height: 480px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 4px 12px;
+    background-color: white;
+}
+
+.side-img {
+    background-image: url(side-image.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    overflow: hidden;
+    box-shadow: rgba(107, 47, 163, 0.464) 0px 4px 12px;
+}
+
+
+#login-form h3 , #register-form h3{
+    margin-top: 41px;
+    margin-left: 78px;
+    font-size:25px;
+}
+
+
+#login-form label{
+    margin-left: 78px;
+    padding-top: 25px;
+    color: rgb(137, 137, 137);
+    font-size: 17px;
+}
+#register-form label{
+    margin-left: 78px;
+    padding-top: 12px;
+    color: rgb(137, 137, 137);
+    font-size: 14px;
+}
+#login-form .email{
+    margin-top: 27px;
+    margin-left: 78px;
+}
+#register-form .full-name{
+    margin-top: 17px;
+    margin-left: 78px;
+}
+
+#login-form label input , #register-form label input{
+    width: 280px;
+    border: 1px solid lightgrey;
+    padding: 9px 15px;
+    outline: none;
+    border-radius: 4px;
+}
+#register-form label input{
+     width: 280px;
+    border: 1px solid lightgrey;
+    padding: 6px 12px;
+    outline: none;
+    border-radius: 4px;
+}
+
+#login-submit{
+    background-color: #d240c6;
+    width: 200px;
+    height: 39px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 118px;
+    border: none;
+    border-radius: 7px;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+#login-submit:hover{
+    background-color: #6b2fa3;
+}
+
+#register-form #register-sumbit{
+    background-color: #d240c6;
+    width: 200px;
+    height: 39px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 39px;
+    border: none;
+    border-radius: 7px;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+#login-form p{
+    color: lightgray;
+    font-size: 12px;
+    margin-left: 123px;
+    margin-top: 10px;
+}
+#register-form p{
+    color: lightgray;
+    font-size: 12px;
+    margin-left: 117px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+#login-form p span ,
+#register-form p span {
+    color: #6b2fa3;
+    cursor: pointer;
+}
+
+.side-img{
+    position: relative;
+}
+.side-img p{
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    letter-spacing: 1.5px;
+}
